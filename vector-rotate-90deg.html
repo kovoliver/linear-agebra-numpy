@@ -37,7 +37,10 @@
             enableRightClick: false,
             enableLabelDrags: false,
             enableShiftDragZoom: true,
-            showFullscreenButton: true
+            showFullscreenButton: true,
+            appletOnLoad(api) {
+                api.setCoordSystem(-10, 10, -7.5, 7.5);
+            }
         };
 
         const applet = new GGBApplet(parameters, true);
